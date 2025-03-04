@@ -35,83 +35,36 @@ export default function RootLayout({ children }) {
         href="https://fastrr-boost-ui.pickrr.com/assets/styles/shopify.css"
       ></link>
 
+      {/* Analytics Code */}
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-S921CSTRWX`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-8G0CLJEW21`}
       />
       <Script strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-S921CSTRWX');
+          gtag('config', 'G-8G0CLJEW21');
                 `}
       </Script>
+      {/* Analytics Code */}
 
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-N94DSYJV7B`}
-      />
+      {/* Google tag Manager code */}
       <Script strategy="lazyOnload">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-N94DSYJV7B');
-                `}
-      </Script>
-
-      <Script id="google-ads-conversion" strategy="afterInteractive">
-        {`
-          function gtag_report_conversion(url) {
-            var callback = function () {
-              if (typeof(url) != 'undefined') {
-                window.location = url;
-              }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-745078872/usbqCIqZ6vwZENiApOMC',
-                'transaction_id': '',
-                'event_callback': callback
-            });
-            return false;
-          }
-        `}
-      </Script>
-
-      <Script strategy="afterInteractive">
-        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-T3BJKHSW');`}
+          })(window,document,'script','dataLayer','GTM-MGZT3HDG')
+                `}
       </Script>
-
-      {/* meta pixel facebook tag start  */}
-      <Script strategy="lazyOnload">
-        {`
-                  !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '923630475929962');
-          fbq('track', 'PageView');
-        `}
-      </Script>
-
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.facebook.com/tr?id=923630475929962&ev=PageView&noscript=1`}
-      />
-      {/* meta pixel facebook tag end  */}
+      {/* Google tag Manager code */}
 
       <body className={inter.className}>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-T3BJKHSW"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MGZT3HDG"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontAnton {
+    font-family: "Anton", serif;
+}
+
+.fontJosefin {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+body {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+    background-color: gray;
+}
+
+p {
+    font-size:  1.1rem;
+    font-family: 'Noto Serif Devanagari', sans-serif;
+    text-align: justify;
+    padding-top: 16px;
+    padding-bottom: 3px;
+}
+
+
+.head_shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.title_bg{
+    background: rgb(195,142,20);
+background: linear-gradient(180deg, rgba(195,142,20,1) 0%, rgba(248,200,28,1) 69%);
+}
+
+
+.buy-now-btn-animation {
+    animation: zoom-in-zoom-out 1.2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.8, 0.8);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.8, 0.8);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 700px) {
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+

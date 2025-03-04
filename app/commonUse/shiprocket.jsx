@@ -80,29 +80,12 @@ const ShiProcket = () => {
 
         let trackingUrl = "";
 
-        const exo = searchParams.get("krttracker");
-        const ts = searchParams.get("krt");
+        const taboola_tracking = searchParams.get("tbclid");
 
-        //this is new addition adskeeper
-
-        const adsKeeper = searchParams.get("hfttrack");
-
-        const mgid_ad = searchParams.get("hftmgidtrack");
-
-
-
-        if (exo) {
-            trackingUrl = `https://syndication.exoclick.com/tag.php?goal=a2231a2d9c3dcd76353a3cb3b061c605&tag=${exo}`;
-        } else if (ts) {
-            trackingUrl = `https://tsyndicate.com/api/v1/cpa/action?key=DhyxVYbxfoMwi9M6ze0UOsAckPHpuPWYWjmH&clickid=${ts}`;
-        } else if (adsKeeper) {
-            trackingUrl = `https://a.adskeeper.co.uk/postback?c=${adsKeeper}&e=hfts&r={payout}`
+        if (taboola_tracking) {
+            trackingUrl = `https://trc.taboola.com/actions-handler/log/3/s2s-action?click-id=${taboola_tracking}&name=lead`;
         }
-        else if (mgid_ad) {
-            trackingUrl = `https://a.mgid.com/postback?c=${mgid_ad}&e=dev111&r={payout}`
-        }
-        // console.log("trackingUrl: ", trackingUrl);
-
+        
         try {
             await fetch(trackingUrl, {
                 method: "GET",
@@ -159,11 +142,11 @@ const ShiProcket = () => {
         <>
 
             <button
-                className="relative w-[18rem] sm:w-[22rem] shoporder  shiprocketbutton "
+                className="relative w-[17rem] sm:w-[28rem] shoporder  shiprocketbutton "
                 onClick={handleShiProcket}
             >
                 <div className="relative">
-                    <div className="bg-green-700 text-white text-xl font-semibold py-2 sm:my-6 my-3 w-full rounded-xl">
+                    <div className="bg-[#329166] text-white text-lg font-semibold py-2 sm:my-6 my-3 w-full rounded-xl mx-auto">
                         <div className="flex items-center align-middle justify-center">
                             BUY NOW&nbsp;
                             <img

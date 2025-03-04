@@ -34,7 +34,7 @@ const SelectProduct = dynamic(() => import("./MainComponent/SelectProduct"), {
 
 const page = () => {
   useEffect(() => {
-    localStorage.setItem("PATH_KEY", "/");
+    localStorage.setItem("PATH_KEY", "/tsr");
   }, []);
 
   return (
@@ -48,7 +48,7 @@ const page = () => {
 
         <Howtouse />
 
-         <Review />
+        <Review />
 
         <Footer />
 

@@ -62,7 +62,7 @@ const SelectProduct = () => {
             <div className="fontPoppins font-extrabold sm:text-[1.3vw] text-[7.2vw]">
               Horse Fire Shilajit Resin
             </div>
-            <div className="md:text-xl text-md fontPoppins text-gray-500"> Himalayan Origin Pure </div>
+            <div className="md:text-xl text-md fontPoppins text-gray-500">Pure Himalayan Origin  </div>
             <div className="fontPoppins flex items-center sm:space-x-2 space-x-1 py-1 ">
               <div className="flex text-[#ffd203]">
                 {Array.from({ length: totalStars }, (_, index) => (
