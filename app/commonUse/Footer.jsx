@@ -8,18 +8,25 @@ const Footer = () => {
 
                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/a19635c1-20a5-4acd-6251-28756da2a300/public" alt="" className="w-32 mx-auto" />
 
-                <h1 className="md:text-2xl text-md font-bold ">
+                <h1 className="md:text-xl text-md font-bold ">
                     Horse Fire Shilajit Resin Copyright ©2025.
                 </h1>
-                <div className="fontPoppins text-sm flex justify-center items-center gap-4 py-2">
+                <div className="fontPoppins text-sm flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-7 py-2 text-center">
 
                     <Link href='/terms-conditions' className='underline text-blue-600'>
                         Terms & Conditions
                     </Link>
 
-
                     <Link href='/privacy-policy' className='underline text-blue-600'>
                         Privacy Policy
+                    </Link>
+
+                    <Link href='/health-disclaimer' className='underline text-blue-600'>
+                        Health Disclaimer
+                    </Link>
+
+                    <Link href='/contact-us' className='underline text-blue-600'>
+                        Contact Us
                     </Link>
                 </div>
 

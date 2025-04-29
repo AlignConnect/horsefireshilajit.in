@@ -45,8 +45,8 @@ const Content = () => {
         },
         {
             id: 4,
-            title: "हाई टेस्टोस्टेरोन",
-            description: "टेस्टोस्टेरोन लेवल में सुधार, कम तनाव",
+            title: "ऊर्जावान और फुर्तीला",
+            description: "यह आपको ऊर्जावान और फुर्तीला बनाने में मदद करता है।",
             image: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/6341046c-f264-4229-5578-d2b32e45e900/public",
         }
     ];
